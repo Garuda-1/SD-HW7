@@ -40,7 +40,7 @@ public class Main implements CommandLineRunner {
         double mean = Double.parseDouble(commandLine.getOptionValue("mean"));
         double sdev = Double.parseDouble(commandLine.getOptionValue("sdev"));
         long samples = Long.parseLong(commandLine.getOptionValue("samples"));
-        String profileTargetPackage = commandLine.getOptionValue("profile-target");
+        String profileTargetPackage = commandLine.getOptionValue("profile_target_package");
         if (profileTargetPackage == null) {
             profileTargetPackage = Main.class.getPackageName();
         }
